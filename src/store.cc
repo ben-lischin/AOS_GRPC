@@ -154,7 +154,7 @@ class ClientRequest {
 		VendorList *_vendors;
 
 		// per request
-		ServerContext _ctx;
+		grpc::ServerContext _ctx;
 		store::ProductQuery _request;
 		grpc::ServerAsyncResponseWriter<store::ProductReply> _responder;
 
